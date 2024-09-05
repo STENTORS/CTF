@@ -1,0 +1,49 @@
+/* Basic reset and body styling */
+body {
+    margin: 0;
+    font-family: 'Courier New', Courier, monospace;
+    background-color: #000; /* Black background */
+    color: #00FF00; /* Green text */
+}
+
+/* Header styling */
+header {
+    background-color: #111; /* Slightly lighter black */
+    color: #00FF00; /* Green text */
+    padding: 20px;
+    text-align: center;
+	position: fixed;
+    border-bottom: 2px solid #00FF00; /* Green border */
+}
+
+/* Main content styling */
+main {
+    padding: 20px;
+}
+
+/* Challenge section styling */
+.challenge {
+    background-color: #111; /* Slightly lighter black */
+    margin-bottom: 20px;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 255, 0, 0.3); /* Green shadow */
+    border: 1px solid #00FF00; /* Green border */
+}
+
+.challenge h2 {
+    margin-top: 0;
+    color: #00FF00; /* Green text */
+}
+
+/* Footer styling */
+footer {
+    background-color: #111; /* Slightly lighter black */
+    color: #00FF00; /* Green text */
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    border-top: 2px solid #00FF00; /* Green border */
+}

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CTF Shop</title>
+    <link rel="stylesheet" href="shop.css">
+</head>
+<body>
+    <header>
+        <h1>CTF Shop</h1>
+        <p>Purchase tools to help you capture more flags!</p>
+    </header>
+
+    <main>
+        <section class="shop-item">
+            <h2>Item 1: Code Analyzer</h2>
+            <p>Price: 50 Points</p>
+            <button class="button" onclick="addToBasket('Code Analyzer', 50)">Add to Basket</button>
+        </section>
+
+        <section class="shop-item">
+            <h2>Item 2: Vulnerability Scanner</h2>
+            <p>Price: 75 Points</p>
+            <button class="button" onclick="addToBasket('Vulnerability Scanner', 75)">Add to Basket</button>
+        </section>
+
+        <section class="shop-item">
+            <h2>Item 3: Encryption Breaker</h2>
+            <p>Price: 100 Points</p>
+            <button class="button" onclick="addToBasket('Encryption Breaker', 100)">Add to Basket</button>
+        </section>
+
+        <div class="basket-actions">
+            <button class="button" onclick="viewBasket()">View Basket</button>
+            <button class="button" onclick="checkout()">Checkout</button>
+			<button class="button" onclick="home()">Home</button>
+        </div>
+    </main>
+
+    <script>
+        let basket = [];
+
+        function addToBasket(item, price) {
+            basket.push({ item, price });
+            alert(item + ' added to basket.');
+        }
+
+        function viewBasket() {
+            let basketContent = 'Your Basket:\n';
+            let total = 0;
+            basket.forEach(entry => {
+                basketContent += `${entry.item} - ${entry.price} Points\n`;
+                total += entry.price;
+            });
+            basketContent += `\nTotal: ${total} Points`;
+            alert(basketContent);
+        }
+		
+		function checkout(){
+			document.location='checkout.html'
+		}
+		
+		function home() {
+			document.location='home.html'
+		}
+
+    </script>
+</body>
+</html>

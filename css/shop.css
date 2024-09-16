@@ -1,0 +1,105 @@
+/* Body and general styling */
+body {
+    margin: 0;
+    font-family: 'Courier New', Courier, monospace;
+    background-color: #000; /* Black background */
+    color: #00FF00; /* Green text */
+}
+
+/* Header styling */
+header {
+    background-color: #111;
+    color: #00FF00;
+    padding: 20px;
+    text-align: center;
+    border-bottom: 2px solid #00FF00;
+}
+
+/* Main content styling */
+main {
+    padding: 20px;
+}
+
+/* Shop item styling */
+.shop-item {
+    background-color: #111;
+    margin-bottom: 20px;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 255, 0, 0.3);
+    border: 1px solid #00FF00;
+}
+
+.shop-item h2 {
+    margin-top: 0;
+    color: #00FF00;
+}
+
+.shop-item p {
+    margin: 10px 0;
+    color: #00FF00;
+}
+
+/* Basket actions styling */
+.basket-actions {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.button {
+    background-color: #111;
+    color: #00FF00;
+    border: 2px solid #00FF00;
+    padding: 10px 20px;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+    text-transform: uppercase;
+    transition: background-color 0.3s, color 0.3s, transform 0.3s;
+    margin: 5px;
+}
+
+.button:hover {
+    background-color: #00FF00;
+    color: #000;
+    transform: scale(1.05);
+}
+
+.button:active {
+    background-color: #009900;
+    color: #000;
+    transform: scale(0.95);
+}
+
+/* Footer styling */
+footer {
+    background-color: #111;
+    color: #00FF00;
+    text-align: center;
+    padding: 10px;
+    border-top: 2px solid #00FF00;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+
+/* Input styling */
+input[type="text"] {
+    background-color: #000; /* Black background */
+    color: #00FF00; /* Green text */
+    border: 2px solid #00FF00; /* Green border */
+    border-radius: 4px;
+    padding: 8px;
+    width: 100%;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 14px;
+    margin-bottom: 15px;
+    box-sizing: border-box;
+}
+
+input[type="text"]:focus {
+    outline: none;
+    box-shadow: 0 0 5px #00FF00; /* Green glow on focus */
+}

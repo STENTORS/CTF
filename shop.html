@@ -4,31 +4,43 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CTF Shop</title>
-    <link rel="stylesheet" href="shop.css">
+    <link rel="stylesheet" href="css/shop.css">
 </head>
 <body>
+	<script src="js/shop.js"></script>
     <header>
         <h1>CTF Shop</h1>
-        <p>Purchase tools to help you capture more flags!</p>
     </header>
 
     <main>
         <section class="shop-item">
             <h2>Item 1</h2>
-            <p>Price: £50</p>
-            <button class="button" onclick="addToBasket('Item 1', 50)">Add to Basket</button>
+			<div>
+				Amount: <span id="amount-display1">5</span>
+			</div>
+            <p>Price: 50 Points</p>
+            <button class="button" onclick="remove(1)">-</button>
+			<button class="button" onclick="addToBasket('Item 1', 50,1)">+</button>
         </section>
 
         <section class="shop-item">
             <h2>Item 2</h2>
-            <p>Price: £75</p>
-            <button class="button" onclick="addToBasket('Item 2', 75)">Add to Basket</button>
+			<div>
+				Amount: <span id="amount-display2">5</span>
+			</div>
+            <p>Price: 75 Points</p>
+            <button class="button" onclick="remove(2)">-</button>
+			<button class="button" onclick="addToBasket('Item 1', 50,2)">+</button>
         </section>
 
         <section class="shop-item">
             <h2>Item 3</h2>
-            <p>Price: £100</p>
-            <button class="button" onclick="addToBasket('Item 3', 100)">Add to Basket</button>
+			<div>
+				Amount: <span id="amount-display3">5</span>
+			</div>
+            <p>Price: 100 Points</p>
+            <button class="button" onclick="remove(3)">-</button>
+			<button class="button" onclick="addToBasket('Item 1', 50,3)">+</button>
         </section>
 
         <div class="basket-actions">
@@ -38,33 +50,9 @@
         </div>
     </main>
 
-    <script>
-        let basket = [];
-
-        function addToBasket(item, price) {
-            basket.push({ item, price });
-            alert(item + ' added to basket.');
-        }
-
-        function viewBasket() {
-            let basketContent = 'Your Basket:\n';
-            let total = 0;
-            basket.forEach(entry => {
-                basketContent += `${entry.item} - ${entry.price} Points\n`;
-                total += entry.price;
-            });
-            basketContent += `\nTotal: ${total} Points`;
-            alert(basketContent);
-        }
-		
-		function checkout(){
-			document.location='checkout.html'
-		}
-		
-		function home() {
-			document.location='index.html'
-		}
-
-    </script>
 </body>
+
+<script>
+	document.elementById("wow").innerHTML = amount;
+</script>
 </html>

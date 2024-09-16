@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CTF Shop</title>
+    <link rel="stylesheet" href="css/shop.css">
+</head>
+<body>
+	<script src="js/login.js"></script>
+
+    <header>
+        <h1>CTF Blog</h1>
+        <p>Login to your account</p>
+    </header>
+
+    <main>
+	
+		<section class="shop-item" style="width: 200px;text-align: center;margin: auto;">
+			<form onsubmit="login(event, this)">
+				<label for="user">Username:</label><br>
+				<input type="text" id="user" name="user"><br>
+				<label for="pass">Password:</label><br>
+				<input type="text" id="pass" name="pass">
+				<section class="basket-actions">
+					<button class="button" type="submit" style="text-align:center; margin:auto;">Login</button>
+				</section>
+			</form>
+		</section>
+		
+    </main>
+	
+	<footer>
+		<div>
+			<section class="basket-actions">
+				<button class="button" onclick="home()"style="text-align:center; margin:auto;">Home</button>
+			</section>
+        </div>
+	</footer>
+
+    <script>
+		function goober(event,form){
+			event.preventDefault();  
+			let inPut = form.user.value;
+			let inPutpass = form.pass.value;
+			if (inPut == "qwerty" && inPutpass == "qwerty_pass_very_secure"){
+				document.location='blog_home.html'
+			} else{
+				alert("Incorrect username or password");
+			}
+		}
+    </script>
+</body>
+</html>

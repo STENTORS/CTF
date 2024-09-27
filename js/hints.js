@@ -36,6 +36,18 @@ function c11(){
 	alert("Check the CTF poster.... whats strange about the binary...");
 }
 
+function c12(){
+	alert("ROT13 encryption u7 stuff");
+}
+
+function c13(){
+	alert("Gather and covert all the HEX on the home page");
+}
+
+function c14(){
+	alert("Look in the stoarge section of inspect element for the flag");
+}
+
 function c(){
 	alert("");
 }

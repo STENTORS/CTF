@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="icon" href="images/favicon.png">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ada Capture the Flag 2024</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <style>
+        .challenge {
+            cursor: pointer; /* Indicates clickable sections */
+        }
+    </style>
+</head>
+<body>
+    <script src="js/index.js"></script>
+
+    <header>
+        <h1>Ada Capture the Flag Competition 2024</h1>
+        <p>Test your cybersecurity skills by finding hidden flags!</p>
+    </header>
+
+    <main>
+        <p style="color: green;">66 6C</p>
+
+        <section class="challenge" id="challenge-1">
+            <h2>Challenge 1: CSS</h2>
+            <p>Look deeper into the styling of this page for your next flag.</p>
+            <p style="color: #111;">flag{A8d3J7kT6Q9}</p>
+        </section>
+
+        <section class="challenge" id="challenge-2">
+            <h2>Challenge 2: HTML</h2>
+            <p>Can you find the hidden flag on this webpage?</p>
+        </section>
+        <p style="color: green;">61</p>
+
+        <section class="challenge" id="challenge-3">
+            <h2>Challenge 3: JavaScript</h2>
+            <p>Sometimes the flag is in the code you can't see...</p>
+        </section>
+
+        <section class="challenge" id="challenge-4">
+            <a href="shop.html">
+                <h2>Challenge 4: Shop!</h2>
+            </a>
+            <p style="color: green;">67</p>
+
+            <div class="challenge" id="challenge-4-1">
+                <a href="shop.html">
+                    <h2>4.1: Shop Inputs</h2>
+                </a>
+                <p>What inputs can you manipulate?</p>
+            </div>
+
+            <p style="color: green;">7B</p>
+
+            <div class="challenge" id="challenge-4-2">
+                <a href="shop.html">
+                    <h2>4.2: Shop SQL</h2>
+                </a>
+                <p>SQL injection attack</p>
+            </div>
+        </section>
+        <p style="color: green;">58</p>
+
+        <section class="challenge" id="challenge-5">
+            <a href="login.html">
+                <h2>Challenge 5: Blog</h2>
+            </a>
+            <p style="color: green;">37</p>
+
+            <div class="challenge" id="challenge-5-1">
+                <a href="login.html">
+                    <h2>5.1: Blog Hacker</h2>
+                </a>
+                <p style="color: green;">70</p>
+                <p>Unsecured JavaScript...</p>
+            </div>
+
+            <div class="challenge" id="challenge-5-2">
+                <a href="login.html">
+                    <h2>5.2: Blog Password</h2>
+                </a>
+                <p style="color: green;">32</p>
+                <p>Brute force.</p>
+            </div>
+
+            <div class="challenge" id="challenge-5-3">
+                <a href="login.html">
+                    <h2>5.3: Blog Admin</h2>
+                </a>
+                <p>URL exploitation!</p>
+            </div>
+            <p style="color: green;">4C</p>
+        </section>
+
+        <section class="challenge" id="challenge-6">
+            <a href="gallery.html">
+                <h2>Challenge 6: Image Gallery</h2>
+            </a>
+
+            <div class="challenge" id="challenge-6-1">
+                <a href="gallery.html">
+                    <h2>6.1: Images...</h2>
+                </a>
+                <p>Can you find the real-life scenario's vulnerability (Image Gallery)?</p>
+            </div>
+            <p style="color: green;">33</p>
+
+            <div class="challenge" id="challenge-6-2">
+                <a href="gallery.html">
+                    <h2>6.2: Steganography</h2>
+                </a>
+                <p></p>
+            </div>
+            <p style="color: green;">76</p>
+        </section>
+        <p style="color: green;">4B</p>
+
+        <section class="challenge" id="challenge-7">
+            <h2>Challenge 7: Near Field Communication (NFC)</h2>
+            <p>Use the skills you just learnt to find the message in this websites favicon to find the location of the NFC.</p>
+        </section>
+        <p style="color: green;">36</p>
+
+        <section class="challenge" id="challenge-8">
+            <h2>Challenge 8: ENCRYPTION</h2>
+            <p>synt{Q9x6L5wA2G8}</p>
+        </section>
+        <p style="color: green;">4D</p>
+
+        <section class="challenge" id="challenge-9">
+            <h2>Challenge 9: HEX</h2>
+            <p>Unit 1 💀</p>
+        </section>
+        <p style="color: green;">35 7D</p>
+
+        <section class="challenge" id="challenge-10">
+            <h2>Challenge 10: Web Storage</h2>
+            <p>Inspect what might be in your device's local storage...</p>
+        </section>
+
+        <section class="challenge" id="challenge-11">
+            <a href="files.html">
+                <h2>Challenge 11: File Management</h2>
+            </a>
+            <p>File spoofing (don't do this in real life, please).</p>
+        </section>
+
+        <!-- Last stuff -->
+        <section class="challenge" id="challenge-hint">
+            <a href="hints.html">
+                <h2>Hints</h2>
+            </a>
+            <p>Useful tips!</p>
+        </section>
+
+        <p>You are very close to a flag :D</p>
+        <section class="challenge" id="challenge-flag">
+            <p style="display: none; color: red;">flag{C9r2W5nP8X4}</p>
+        </section>
+    </main>
+
+    <footer>
+        <p>Good luck! Remember to work together as a team.</p>
+
+        <div class="basket-actions">
+		<button class="button" onclick="intro()">INTRO</button>
+            <button class="button" onclick="hint()">Hints</button>
+            <button class="button" onclick="submitFlag()">Submit Flag</button>
+        </div>
+    </footer>
+</body>
+</html>

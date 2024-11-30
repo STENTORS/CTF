@@ -1,15 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <link rel="icon" href="images/favicon.png">
-
+	<link rel="icon" href="images/favicon.png">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CTF Shop</title>
     <link rel="stylesheet" href="css/shop.css">
+	<link rel="stylesheet" href="css/mylo.css">
 </head>
 <body>
 	<script src="js/flag.js"></script>
+	<script src="js/mylo.js"></script>
+	
     <header>
         <h1>Capture the Flag</h1>
         <p>Add your found flag codes here</p>
@@ -86,7 +88,7 @@
         </section>
 
         <section class="shop-item">
-            <h1>Challenge 7: CTF Poster</h1>
+            <h1>Challenge 7: Near Field Communication (NFC)</h1>
             <p id="10">Not Found</p>
         </section>
 
@@ -104,6 +106,12 @@
             <h1>Challenge 10: Web Storage</h1>
             <p id="13">Not Found</p>
         </section>
+		
+		<section class="shop-item">
+            <h1>Challenge 11: File Management</h1>
+            <p id="14">Not Found</p>
+        </section>
+		
 
         <section class="shop-item">
             <p></p>
@@ -118,34 +126,6 @@
         </div>
     </footer>
 
-    <script>
-        function home() {
-            document.location = 'index.html';
-        }
 
-        let userFlagArray = JSON.parse(localStorage.getItem("foundFlagStorage")) || [];
-
-        function reloadValues() {
-            if (userFlagArray.length > 0) {
-                for (let j = 0; j < userFlagArray.length; j++) {
-                    let numj = userFlagArray[j];
-                    document.getElementById(numj).innerText = "FOUND!!";
-                }
-            }
-        }
-
-        function check(event) {
-            event.preventDefault();
-
-            let flag = document.getElementById("flag").value;
-
-            const flagArray = [
-                "flag{A8d3J7kT6Q9}", //1 - CSS
-                "flag{C9r2W5nP8X4}", //2 - HTML
-                "flag{H6b1V8zK4Q3}", //3 - JS
-                "flag{L5p9T2fY7X8}", //4.1 - Shop
-                "flag{R7d3N8vK5M1}", //4.2 - Shop
-                "flag{E9j4Q6cL3T2}", //5.1 - Blog
-                "flag{M1k7X8nD5V4}", //5.2 - Blog
-                "flag{Y2v6F9zQ3B8}", //5.3 - Blog
-                "
+</body>
+</html>

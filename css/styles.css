@@ -20,6 +20,12 @@ main {
     padding: 20px;
 }
 
+section:hover {
+    transform: scale(1.02); 
+    border-color: rgba(15, 255, 80, 1);
+    box-shadow: 0 0 10px rgb(15, 255, 80);
+}
+
 /* Challenge section styling */
 .challenge {
     background-color: #111; /* Slightly lighter black */
@@ -82,7 +88,7 @@ button:hover {
     background-color: #00FF00; 
     color: #000; 
     transform: scale(1.05); 
-
+}
 button:active {
     background-color: #009900;
     color: #000; 

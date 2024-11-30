@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<link rel="icon" href="images/favicon.png">
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>CTF Shop</title>
+	<link rel="stylesheet" href="css/shop.css">
+	<style>
+		.video-container {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			position: relative;
+		}
+
+		video {
+			width: 100%;
+			max-width: 800px;
+		}
+
+		/* Custom play button styling */
+		#playButton {
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			transform: translate(-50%, -50%);
+			font-size: 24px;
+			padding: 10px 20px;
+			cursor: pointer;
+			z-index: 1;
+		}
+	</style>
+</head>
+<body>
+	<script src="js/shop.js"></script>
+
+	<header>
+		<h1>WATCH THE WHOLE VIDEO TO GET THE FLAG</h1>
+	</header>
+	
+	<main>
+		<div id="videoEndText" style="display: none; margin-top: 20px;">
+			<h1>flag{B7x2}</h1>
+		</div>
+
+		<div class="video-container">
+			<video id="myVideo" preload="auto">
+				<source src="images/movie.mp4" type="video/mp4">
+				Your browser does not support the video tag.
+			</video>
+			<button class="button" id="playButton">Play Video</button>
+		</div>
+	</main>
+	
+	<footer>
+		<section>
+			<div class="basket-actions">
+				<button class="button" onclick="home()">Home</button>
+			</div>
+		</section>
+	</footer>
+
+	<script>
+		const video = document.getElementById('myVideo');
+		const playButton = document.getElementById('playButton');
+		const videoEndText = document.getElementById('videoEndText');
+
+		playButton.addEventListener('click', () => {
+			video.muted = false; 
+			video.play(); 
+			playButton.style.display = 'none';
+		});
+
+		video.addEventListener('ended', () => {
+			videoEndText.style.display = 'block';
+		});
+	</script>
+
+</body>
+</html>

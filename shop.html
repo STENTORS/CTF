@@ -1,14 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <link rel="icon" href="images/favicon.png">
+	<link rel="icon" href="images/favicon.png">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CTF Shop</title>
     <link rel="stylesheet" href="css/shop.css">
+	<link rel="stylesheet" href="css/mylo.css">
 </head>
 <body>
 	<script src="js/shop.js"></script>
+	<script src="js/mylo.js"></script>
+	
     <header>
         <h1>CTF Shop</h1>
     </header>
@@ -43,13 +46,21 @@
             <button class="button" onclick="remove(3)">-</button>
 			<button class="button" onclick="addToBasket('Item 1', 50,3)">+</button>
         </section>
-
-        <div class="basket-actions">
-            <button class="button" onclick="viewBasket()">View Basket</button>
-            <button class="button" onclick="checkout()">Checkout</button>
-			<button class="button" onclick="home()">Home</button>
-        </div>
+		<section class="shop-item">
+            <h2></h2>
+        </section>
+		
     </main>
+	
+	<footer>
+		<section>
+			<div class="basket-actions">
+				<button class="button" onclick="viewBasket()">View Basket</button>
+				<button class="button" onclick="checkout()">Checkout</button>
+				<button class="button" onclick="home()">Home</button>
+			</div>
+		</section>
+	</footer>
 
 </body>
 

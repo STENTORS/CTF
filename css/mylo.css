@@ -1,0 +1,35 @@
+.text-block {
+    position: absolute;
+    color: limegreen;
+    opacity: 0.1;
+    animation: move 10s linear infinite;
+    white-space: nowrap;
+    pointer-events: none;
+    z-index: 0; /* Behind the challenge sections */
+}
+
+@keyframes move {
+    0% {
+        transform: translateY(0);
+        opacity: 0.4;
+    }
+    50% {
+        opacity: 0.8;
+    }
+    100% {
+        transform: translateY(-150vh);
+        opacity: 0.6;
+    }
+}
+
+/* General section styling */
+section, header {
+    background-color: #111;
+    position: relative;
+    z-index: 5; /* Ensures it appears above random text blocks */
+}
+
+footer {
+    background-color: #111;
+    z-index: 10; /* Ensures footer stays above text blocks */
+}

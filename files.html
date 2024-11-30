@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<link rel="icon" href="images/favicon.png">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CTF Shop</title>
+    <link rel="stylesheet" href="css/files.css">
+	<link rel="stylesheet" href="css/mylo.css">
+</head>
+<body>
+	<script src="js/file.js"></script>
+	<script src="js/mylo.js"></script>
+    <header>
+        <h1>CTF File Editor</h1>
+        <p>Upload text files for editing..</p>
+    </header>
+
+    <main>
+
+		<section class="shop-item" style="width: 300px; text-align: center; margin: auto;">
+			<form onsubmit="checkFile(event)">
+				<label for="file">Only Input a Text File..</label>
+				<input id="file" type="file" name="file"/>
+				<p></p>
+				<button type="submit">Upload</button>
+			</form>
+		</section>
+
+    </main>
+	
+	<footer>
+		<section>
+			<div class="basket-actions">
+				<button class="button" onclick="home()">Home</button>
+			</div>
+		</section>
+	</footer>
+
+
+</body>
+</html>

@@ -12,5 +12,5 @@ function login(event,form){
 }
 
 function home() {
-	document.location='index.html'
+	document.location='home.html'
 }
